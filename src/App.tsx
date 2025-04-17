@@ -1,14 +1,19 @@
 import { BrowserRouter } from "react-router-dom"
 import { AppRoutes } from "./routes"
+import { ThemeProvider } from "@emotion/react"
+import { LightTheme } from "./shared/theme"
 
 
 function App() {
   
 
   return (
-    <BrowserRouter>
+    <ThemeProvider theme={LightTheme}>
+       <BrowserRouter>
       <AppRoutes />
     </BrowserRouter>
+    </ThemeProvider>
+   
   )
 }
 
