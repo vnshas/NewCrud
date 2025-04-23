@@ -19,5 +19,10 @@ export const LightTheme =  createTheme({
         default: '#f7f6f3',
         paper: '#ffffff',
     }
+    },
+    typography:{
+        allVariants:{
+            color:cyan[500]
+        }
     }
 })
